@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myApp')
-  .factory('Person', function (visitor) {
+  .factory('Person', function (visitor, $http) {
     return function Person (name) {
       this.name = name;
       this.greet = function () {
@@ -11,6 +11,9 @@ angular.module('myApp')
         else {
           return 'Hey ' + this.name + '!';
         }
+      };
+      this.create = function () {
+        return $http.post('/people', this);
       };
     };
   });
