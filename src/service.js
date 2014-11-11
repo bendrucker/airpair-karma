@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('myApp')
-  .value('Person', Person);
+  .factory('Person', function () {
+    return function Person (name) {
+      this.name = name;
+    };
+  });
 
-function Person (name) {
-  this.name = name;
-}
+
