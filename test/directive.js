@@ -29,10 +29,8 @@ describe('Welcome Directive', function () {
     };
     scope.$digest();
     element.triggerHandler('mouseenter');
-    scope.$digest();
     expect(element.css('color')).to.equal('blue');
     element.triggerHandler('mouseleave');
-    scope.$digest();
     expect(element.css('color')).to.be.empty;
   });
 
