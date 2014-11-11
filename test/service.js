@@ -48,6 +48,7 @@ describe('Person', function () {
           succeeded = true;
         });
       $httpBackend.flush();
+      expect(succeeded).to.be.true;
     });
 
   });
