@@ -6,10 +6,10 @@ angular.module('myApp')
       this.name = name;
       this.greet = function () {
         if (visitor.country === 'UK') {
-          console.log('Good day to you,', this.name + '.');
+          return 'Good day to you, ' + this.name + '.';
         }
         else {
-          console.log('Hey', this.name + '!');
+          return 'Hey ' + this.name + '!';
         }
       };
     };
