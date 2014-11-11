@@ -15,6 +15,7 @@ describe('Welcome Directive', function () {
         return 'Hello!';
       }
     };
+    expect(element.find('h1').text()).to.equal('{{person.greet()}} Welcome to the app!');
     scope.$digest();
     expect(element.find('h1').text()).to.equal('Hello! Welcome to the app!');
   });
