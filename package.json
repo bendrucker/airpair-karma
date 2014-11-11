@@ -1,0 +1,9 @@
+{
+  "name": "airpair-karma",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://bendrucker.me)",
+  "license": "MIT"
+}
