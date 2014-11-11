@@ -3,6 +3,7 @@
 angular.module('myApp')
   .directive('welcome', function () {
     return {
+      restrict: 'E',
       scope: {
         person: '='
       },
